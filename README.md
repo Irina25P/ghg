@@ -1,80 +1,40 @@
 # Christmas Animation Project - README
 
-## Overview
-This project involves creating a holiday-themed animation in Blender. It features two humanoid characters (an alien and Santa Claus), a festive environment, and dynamic animations, all combined into a single scene. Below are the detailed steps and processes used to create this project.
+- I started by creating a humanoid character in blender 4.2, using the tutorial: https://youtu.be/IhIGVO4fqLg?si=zp59mVnvPdgp_Bfb  
+- After that I added it armature for moving it and I also used Inverse Kinematics for a better control, being inspired by this video: https://youtu.be/mYgznqvbisM?si=m17v08NRrIk1tLYd  
+- I coppied the character into 2 separate blender files and I modelled to obtain the alien and Santa Claus.  
+- For the alien, I made his head bigger and the members thiner and I coloured the skin in green, in shading mode, applying precedural texturing to look similar to the skin and mapping into bumps. (video: https://youtu.be/iDXGPsrO0_M?si=5JfmDIfgM8ByPvQp)  
+- From that moment, I moved to blender 3.6 because the other version of blender it was not supoorted on my laptop and it crashed when I tried to use shading mode.  
+- For the santa I coloured the skin normally and I put on him some clothes adding a texture from a photo in UV Editing mode, using UV Image Wrapping. The shoes and the hat are downloaded from the website:  
+- After finishing my two characters, I imported the UCC Student Centre from the link provided and the other objects from sketchfab (spaceship, snow blanket, christmas tree, presents, clouds, green ring, dino students).  
+- With all objects I set up the entire scene, establishing their position, their sizes, and also the camera position.  
+- The light consists of a sun above all, a small yellow light above the star and 4 lights, red and green, in front of the spaceshift to create a christmassy atmosphere.  
+- After defining all the details for the scene to look nice, I moved all objects below the snow blanket with -1000. Before that, I tried hiding them from the camera view but I did not manage in any way.  
 
----
+## Keyframe Animation
+- Firstly, I chose the length of 1500 frames (250 frames are 10 seconds => 6x250 = 1500).  
+- I started animating the clouds (inspiration video: https://youtu.be/dF3JMt3uM1E?si=JzkpgWqTjCWC0liE).  
+- After that, I was curious about cloth animation and I watched the following video: https://youtu.be/pFBkikMBW0U?si=q2wFs4QKvB89UnhN and I tried creating a flag with “Merry Christmas” message from a photo with transparancy.  
+- I continued with the animation of the spaceship’s arrival from the main position in the scene to the one when it is visible in the camera view (going backwards and memorising the moves).  
+- I coppied those moves to create the leaving path and I rotated the spaceship with an angle of 180 degrees. I used bezier type for the movements.  
+- The appearance of the characters and of the christmas tree are through the green ring. (Liniar movements).  
+- Next, I tried creating a hand waving for both characters and a smooth walk for the alien to the christmas tree.  
+- The dino stundents suddenly appeared from the snow and with a little of “Christmas Magic” they received presents.  
+- In the end, the characters left through the green ring back to the spaceship and then it returned in the sky.  
+- I added a 3D text specifying the title of the video: “Christmas is here”.  
 
-## Creation Steps
-
-### 1. Humanoid Character
-- **Base Model**: Started by creating a humanoid character in Blender 4.2 using the tutorial: [Creating a Humanoid Character](https://youtu.be/IhIGVO4fqLg?si=zp59mVnvPdgp_Bfb).  
-- **Armature and IK**: Added an armature to the character for movement control and implemented Inverse Kinematics (IK) for better control, following the tutorial: [Inverse Kinematics](https://youtu.be/mYgznqvbisM?si=m17v08NRrIk1tLYd).  
-- **Variations**:  
-  - **Alien**: 
-    - Copied the base character to a new Blender file.  
-    - Enlarged the head, made the limbs thinner, and colored the skin green.  
-    - Used procedural texturing to create a skin-like appearance and mapped it into bumps (inspired by [Procedural Skin Texturing](https://youtu.be/iDXGPsrO0_M?si=5JfmDIfgM8ByPvQp)).  
-    - Moved to Blender 3.6 due to crashes in shading mode on Blender 4.2.  
-  - **Santa Claus**: 
-    - Used the base character and colored the skin normally.  
-    - Added clothes by texturing a photo using UV Editing mode with UV Image Wrapping.  
-    - Downloaded the shoes and hat from an external website.
-
----
-
-### 2. Environment Setup
-- **Imported Models**:  
-  - UCC Student Centre from the provided link.  
-  - Additional objects (spaceship, snow blanket, Christmas tree, presents, clouds, green ring, and dino students) downloaded from Sketchfab.  
-- **Scene Arrangement**: Positioned and scaled all objects. Defined camera positions for optimal framing.  
-- **Lighting**:  
-  - Added a sun as the main light source.  
-  - Small yellow light placed above the star on the Christmas tree.  
-  - Four lights (two red and two green) positioned in front of the spaceship for a Christmassy atmosphere.  
-- **Object Adjustment**: Moved all objects below the snow blanket by -1000 units. Attempts to hide objects from camera view were unsuccessful.
-
----
-
-## Animation
-
-### 1. Timeline
-- Set the animation length to **1500 frames** (6 x 250 frames for a total of 60 seconds).  
-
-### 2. Animations
-- **Clouds**: Animated clouds to simulate natural movement, inspired by [Animating Clouds in Blender](https://youtu.be/dF3JMt3uM1E?si=JzkpgWqTjCWC0liE).  
-- **Flag Animation**: Created a waving flag with a "Merry Christmas" message using a transparent photo, following [Cloth Animation](https://youtu.be/pFBkikMBW0U?si=q2wFs4QKvB89UnhN).  
-- **Spaceship**:  
-  - Animated its arrival by defining the movement path backward from its final position to the camera's view.  
-  - Duplicated the path for the spaceship's departure and rotated it by 180 degrees. Used Bezier interpolation for smooth motion.  
-- **Green Ring Transitions**: Animated the appearance of the characters and the Christmas tree through the green ring using linear movements.  
-- **Character Actions**:  
-  - Created hand-waving animations for both characters.  
-  - Added a smooth walking animation for the alien as it approached the Christmas tree.  
-- **Dino Students**: Animated their sudden appearance from the snow, where they received presents with a touch of "Christmas magic."  
-- **Ending Sequence**: Both characters exited through the green ring back to the spaceship, which then returned to the sky.  
-
----
-
-## Final Touches
-- Added a 3D text displaying the title of the animation: **"Christmas is here"**.  
-
----
-
-## Notes
-- Blender Versions:  
-  - Initial modeling and setup were done in Blender 4.2.  
-  - Switched to Blender 3.6 for shading due to compatibility issues.  
-- External Resources:  
-  - Objects and assets were imported from Sketchfab and other specified sources.  
-  - Shoes and hat for Santa were downloaded from an external website.  
-
---- 
-
-## Inspiration and Tutorials
-1. [Creating a Humanoid Character](https://youtu.be/IhIGVO4fqLg?si=zp59mVnvPdgp_Bfb)  
-2. [Inverse Kinematics](https://youtu.be/mYgznqvbisM?si=m17v08NRrIk1tLYd)  
-3. [Procedural Skin Texturing](https://youtu.be/iDXGPsrO0_M?si=5JfmDIfgM8ByPvQp)  
-4. [Animating Clouds in Blender](https://youtu.be/dF3JMt3uM1E?si=JzkpgWqTjCWC0liE)  
-5. [Cloth Animation](https://youtu.be/pFBkikMBW0U?si=q2wFs4QKvB89UnhN)  
-
+## The activated add-ons: 
+- Animation: Pose Library  
+- Import-Export: BioVision Motion Capture (BVH) format  
+- Import-Export: FBX format  
+- Import-Export: STL format  
+- Import-Export: Scalable Vector Graphics  
+- Import-Export: SketchUp Importer  
+- Import-Export: Stanforf PLY format  
+- Import-Export: UV Layout  
+- Import-Export: Wavefront OBJ format (legacy)  
+- Import-Export: Web3D X3D/VRML2format  
+- Import-Export: gltf 2.p format  
+- Mesh: LoopTools  
+- Node: Node Wrangler  
+- Render: Cycles Render Engine  
